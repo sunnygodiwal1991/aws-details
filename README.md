@@ -199,4 +199,26 @@ Example: You can set alerts if your cloud usage is approaching your budget limit
 * AWS Storage Gateway - Hybrid on prem AWS storage
 * CloudEndure - Disaster recovery service
 
+## Common Question
+1. How are IAM roles and permissions managed in your AWS environment?
+Answer: IAM roles are managed using the principle of least privilege, ensuring users and services only have the necessary permissions to perform their tasks. IAM policies are reviewed and updated regularly to ensure appropriate access.
+2. Is Multi-Factor Authentication (MFA) enabled for all AWS accounts?
+Answer: MFA is enforced for all root accounts and IAM users with access to the AWS Management Console, improving security by requiring additional verification.
+3. Are CloudTrail logs enabled in all AWS regions?
+Answer: Yes, AWS CloudTrail is enabled across all regions to track and log all API activity, ensuring visibility into the usage and management of AWS resources for audit and compliance purposes.
+4. Is data encrypted at rest in services like S3, RDS, and EBS?
+Answer: All sensitive data is encrypted at rest using AWS-managed encryption (e.g., AES-256) or customer-managed AWS KMS keys, ensuring data protection in storage.
+5. How are access keys managed and rotated?
+Answer: Access keys are regularly rotated according to best practices, with old or unused keys being deactivated. AWS IAM access key rotation is automated using tools like AWS Secrets Manager.
+6. Are VPC flow logs enabled to monitor network traffic?
+Answer: Yes, VPC flow logs are enabled to capture and analyze network traffic within the VPC, helping detect unauthorized access or potential security threats.
+7. Is AWS Web Application Firewall (WAF) used to protect applications?
+Answer: AWS WAF is deployed to protect web applications from common security vulnerabilities such as SQL injection and cross-site scripting (XSS), helping to filter out malicious traffic.
+8. Are CloudWatch alarms configured to monitor critical security events?
+Answer: CloudWatch alarms are set to monitor key security metrics and events, such as unauthorized API calls or changes to IAM policies, and trigger alerts for immediate action.
+9. Are backup and disaster recovery strategies in place for critical AWS resources?
+Answer: Yes, automated backups are configured for resources like RDS, S3, and EBS. AWS Backup and Cross-Region Replication ensure high availability and recovery from disasters.
+10. How do you ensure compliance with industry standards (PCI-DSS, HIPAA, etc.) in AWS?
+Answer: Compliance is maintained by using AWS compliance tools like AWS Config, AWS Artifact, and AWS Security Hub. Regular audits and assessments are performed to meet regulatory requirements.
+
 ## ===================== END =====================
