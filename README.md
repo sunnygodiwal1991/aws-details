@@ -150,7 +150,8 @@ Example: You can set alerts if your cloud usage is approaching your budget limit
 ## BlockChain
 * Amazon Managed Blockchain - Hyperledger & Ethereum Service
 * Quantum Ledger DB (QLDB) - Fully managed financial ledger db
-* AWS Compute Services
+
+## AWS Compute Services
 * Amazon EC2 - Secure, resizable Compute Instances (400+)
 * EC2 Autoscaling - Automated compute capacity scaling
 * Amazon LightSail - Easy virtual private server instances
