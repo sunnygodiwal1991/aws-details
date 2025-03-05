@@ -11,8 +11,8 @@ https://www.hava.io/blog/aws-services-list
 - Nessus
 - Burpsuit
 - Nmap
-- Gaurd duty
-- Cloud Watch
+- GuardDuty
+- CloudWatch
 
 check with udemy
     - Nessus Scanner: Network Scanning from Beginner to Advanced!
