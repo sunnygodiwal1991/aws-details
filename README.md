@@ -1,5 +1,7 @@
 ## blue
 
+Blue Charm is a Canadian healthcare technology company specializing in digital health solutions aimed at enhancing patient engagement, medication adherence, and real-world data collection for life sciences companies. Blue Charm operates primarily in Canada and the United States.   During call scheduled on Wed  5th March 2025,  my focus areas to obtain inputs are :   (1) Patient Recruitment Process (2) Patient Engagement Process (3) Data Collection Process (4) Data Quality Practices  (5) regulations and policies aimed at securing critical infrastructure (6) HIPAA compliance because Blue Charm is in USA too       (7)Data Sovereignty Laws (. In Canada, this means data stored in Canada is governed by Canadian privacy and security laws.)
+
 ### AWS services list
 ```
 https://www.hava.io/blog/aws-services-list
