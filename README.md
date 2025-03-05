@@ -200,60 +200,58 @@ Example: You can set alerts if your cloud usage is approaching your budget limit
 * CloudEndure - Disaster recovery service
 
 ## Common Question
-1. How are IAM roles and permissions managed in your AWS environment?
 
+#### 1. How are IAM roles and permissions managed in your AWS environment?
 Answer: IAM roles are managed using the principle of least privilege, ensuring users and services only have the necessary permissions to perform their tasks. IAM policies are reviewed and updated regularly to ensure appropriate access.
 
-2. Is Multi-Factor Authentication (MFA) enabled for all AWS accounts?
-
+#### 2. Is Multi-Factor Authentication (MFA) enabled for all AWS accounts?
 Answer: MFA is enforced for all root accounts and IAM users with access to the AWS Management Console, improving security by requiring additional verification.
 
-3. Are CloudTrail logs enabled in all AWS regions?
-
+#### 3. Are CloudTrail logs enabled in all AWS regions?
 Answer: Yes, AWS CloudTrail is enabled across all regions to track and log all API activity, ensuring visibility into the usage and management of AWS resources for audit and compliance purposes.
 
-4. Is data encrypted at rest in services like S3, RDS, and EBS?
-
+#### 4. Is data encrypted at rest in services like S3, RDS, and EBS?
 Answer: All sensitive data is encrypted at rest using AWS-managed encryption (e.g., AES-256) or customer-managed AWS KMS keys, ensuring data protection in storage.
 
-5. How are access keys managed and rotated?
-
+#### 5. How are access keys managed and rotated?
 Answer: Access keys are regularly rotated according to best practices, with old or unused keys being deactivated. AWS IAM access key rotation is automated using tools like AWS Secrets Manager.
 
-6. Are VPC flow logs enabled to monitor network traffic?
-
+#### 6. Are VPC flow logs enabled to monitor network traffic?
 Answer: Yes, VPC flow logs are enabled to capture and analyze network traffic within the VPC, helping detect unauthorized access or potential security threats.
 
-7. Is AWS Web Application Firewall (WAF) used to protect applications?
-
+#### 7. Is AWS Web Application Firewall (WAF) used to protect applications?
 Answer: AWS WAF is deployed to protect web applications from common security vulnerabilities such as SQL injection and cross-site scripting (XSS), helping to filter out malicious traffic.
 
-8. Are CloudWatch alarms configured to monitor critical security events?
-
+#### 8. Are CloudWatch alarms configured to monitor critical security events?
 Answer: CloudWatch alarms are set to monitor key security metrics and events, such as unauthorized API calls or changes to IAM policies, and trigger alerts for immediate action.
 
-9. Are backup and disaster recovery strategies in place for critical AWS resources?
-
+#### 9. Are backup and disaster recovery strategies in place for critical AWS resources?
 Answer: Yes, automated backups are configured for resources like RDS, S3, and EBS. AWS Backup and Cross-Region Replication ensure high availability and recovery from disasters.
 
-10. How do you ensure compliance with industry standards (PCI-DSS, HIPAA, etc.) in AWS?
-
+#### 10. How do you ensure compliance with industry standards (PCI-DSS, HIPAA, etc.) in AWS?
 Answer: Compliance is maintained by using AWS compliance tools like AWS Config, AWS Artifact, and AWS Security Hub. Regular audits and assessments are performed to meet regulatory requirements.
 
-11. Are security groups and network ACLs properly configured to restrict inbound and outbound traffic?
+#### 11. Are security groups and network ACLs properly configured to restrict inbound and outbound traffic?
 Answer: Yes, security groups and network ACLs are configured to allow only necessary traffic, with strict inbound and outbound rules to limit exposure and prevent unauthorized access.
-12. Is AWS Identity Federation used to provide temporary access for external users?
+
+#### 12. Is AWS Identity Federation used to provide temporary access for external users?
 Answer: AWS Identity Federation is used to allow external users (e.g., corporate employees or third parties) temporary, secure access to AWS resources without needing to manage separate IAM users.
-13. Are unused or obsolete AWS resources (e.g., EC2 instances, volumes, snapshots) regularly identified and terminated?
+
+#### 13. Are unused or obsolete AWS resources (e.g., EC2 instances, volumes, snapshots) regularly identified and terminated?
 Answer: Yes, regular audits are performed to identify and decommission unused resources, reducing the attack surface and preventing unnecessary costs.
-14. Is Amazon Macie used to detect and protect sensitive data (e.g., PII) in AWS S3 buckets?
+
+#### 14. Is Amazon Macie used to detect and protect sensitive data (e.g., PII) in AWS S3 buckets?
 Answer: Yes, Amazon Macie is used to scan S3 buckets for sensitive data such as personally identifiable information (PII), helping to ensure data privacy and compliance.
-15. Are AWS Config and AWS CloudTrail logs being analyzed for non-compliant resource configurations?
+
+#### 15. Are AWS Config and AWS CloudTrail logs being analyzed for non-compliant resource configurations?
 Answer: AWS Config is used to track and evaluate resource configurations against desired configurations, while CloudTrail logs are regularly reviewed to identify potential security violations.
-16. Are your EC2 instances hardened and patched regularly to mitigate security vulnerabilities?
+
+#### 16. Are your EC2 instances hardened and patched regularly to mitigate security vulnerabilities?
 Answer: Yes, EC2 instances are hardened following AWS security best practices and are patched regularly using AWS Systems Manager Patch Manager to ensure the latest security patches are applied.
-17. Are S3 buckets configured to prevent public access, unless required for specific use cases?
+
+#### 17. Are S3 buckets configured to prevent public access, unless required for specific use cases?
 Answer: Yes, all S3 buckets are configured to block public access by default, and access is granted only on a need-to-know basis with proper access controls.
+
 #### 18. Do you use AWS Shield for DDoS (Distributed Denial of Service) protection?
 Answer: Yes, AWS Shield is enabled to provide protection against DDoS attacks, with AWS Shield Advanced offering enhanced protections for critical resources like applications and APIs.
 
