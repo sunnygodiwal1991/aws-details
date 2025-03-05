@@ -21,14 +21,21 @@ check with udemy
 ### Penetration steps follow by DevOps or tester
 
 * Step 1: Information Gathering (Reconnaissance): Collect information about the target system through public sources (OSINT), such as domain names, IP addresses, and other publicly available data.
-* Step 2: Vulnerability Scanning: Use tools to scan for known vulnerabilities in the target system (e.g., Nessus, OpenVAS).
-Port Scanning: Identify open ports and services on the target system using tools like Nmap.
-Service Enumeration: Identify detailed information about the services running on the open ports (e.g., versions, configurations).
+  
+* Step 2: Vulnerability Scanning: Use tools to scan for known vulnerabilities in the target system (e.g., Nessus, OpenVAS). Port Scanning: Identify open ports and services on the target system using tools like Nmap.
+
+* Service Enumeration: Identify detailed information about the services running on the open ports (e.g., versions, configurations).
+
 * Step 3: Vulnerability Exploitation: Attempt to exploit the vulnerabilities identified in the scanning phase to gain unauthorized access to the system. Gain Access: This can involve exploiting weaknesses in software, misconfigurations, or weak passwords to gain access.
+
 * Step 4: Privilege Escalation: Once access is gained, attempt to escalate privileges (e.g., gaining admin/root access). Maintain Access: Set up backdoors or other methods to maintain persistent access.
+
 * Step 5: Data Exfiltration Test the ability to access, alter, or exfiltrate sensitive data.
+
 * Step 6: Document Findings: Record the vulnerabilities discovered, how they were exploited, and the potential impact. Risk Assessment: Analyze the severity of the vulnerabilities and provide recommendations for mitigation.
+
 * Steps 7: Provide a detailed report to the client, including the penetration test results, evidence of exploitation, and suggestions for improving security.
+
 * Step 8: Fix Vulnerabilities: Work with the client to address the identified vulnerabilities. Retesting: Conduct retesting to ensure that the vulnerabilities have been properly mitigated.
 
 <br>
