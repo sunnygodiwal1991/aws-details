@@ -240,4 +240,27 @@ Answer: Yes, automated backups are configured for resources like RDS, S3, and EB
 
 Answer: Compliance is maintained by using AWS compliance tools like AWS Config, AWS Artifact, and AWS Security Hub. Regular audits and assessments are performed to meet regulatory requirements.
 
+11. Are security groups and network ACLs properly configured to restrict inbound and outbound traffic?
+Answer: Yes, security groups and network ACLs are configured to allow only necessary traffic, with strict inbound and outbound rules to limit exposure and prevent unauthorized access.
+12. Is AWS Identity Federation used to provide temporary access for external users?
+Answer: AWS Identity Federation is used to allow external users (e.g., corporate employees or third parties) temporary, secure access to AWS resources without needing to manage separate IAM users.
+13. Are unused or obsolete AWS resources (e.g., EC2 instances, volumes, snapshots) regularly identified and terminated?
+Answer: Yes, regular audits are performed to identify and decommission unused resources, reducing the attack surface and preventing unnecessary costs.
+14. Is Amazon Macie used to detect and protect sensitive data (e.g., PII) in AWS S3 buckets?
+Answer: Yes, Amazon Macie is used to scan S3 buckets for sensitive data such as personally identifiable information (PII), helping to ensure data privacy and compliance.
+15. Are AWS Config and AWS CloudTrail logs being analyzed for non-compliant resource configurations?
+Answer: AWS Config is used to track and evaluate resource configurations against desired configurations, while CloudTrail logs are regularly reviewed to identify potential security violations.
+16. Are your EC2 instances hardened and patched regularly to mitigate security vulnerabilities?
+Answer: Yes, EC2 instances are hardened following AWS security best practices and are patched regularly using AWS Systems Manager Patch Manager to ensure the latest security patches are applied.
+17. Are S3 buckets configured to prevent public access, unless required for specific use cases?
+Answer: Yes, all S3 buckets are configured to block public access by default, and access is granted only on a need-to-know basis with proper access controls.
+#### 18. Do you use AWS Shield for DDoS (Distributed Denial of Service) protection?
+Answer: Yes, AWS Shield is enabled to provide protection against DDoS attacks, with AWS Shield Advanced offering enhanced protections for critical resources like applications and APIs.
+
+#### 19. Are EC2 instances deployed in private subnets to prevent direct internet access?
+Answer: Yes, critical EC2 instances are deployed in private subnets to restrict direct internet access, and internet access is managed through NAT gateways or bastion hosts for controlled access.
+
+#### 20. How is sensitive data, such as passwords and API keys, securely stored in AWS?
+Answer: Sensitive data, such as passwords and API keys, is securely stored using AWS Secrets Manager or AWS Systems Manager Parameter Store, ensuring encrypted storage and controlled access.
+These questions and answers further enhance the security audit of an AWS infrastructure, ensuring best practices are followed for data protection, compliance, and risk mitigation.
 ## ===================== END =====================
