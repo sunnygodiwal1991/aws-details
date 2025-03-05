@@ -91,6 +91,7 @@ Example: You can set alerts if your cloud usage is approaching your budget limit
 * Amazon Route 53: Scalable domain name system (DNS) service to route user requests to appropriate AWS resources.
 * AWS Global Accelerator: Improve the availability and performance of your global applications by routing traffic through optimal AWS edge locations.
 * Elastic Load Balancing (ELB): Distribute incoming traffic across multiple targets, like EC2 instances.
+* Application Load Balancer (ALB): load balancer that specifically handles web traffic, such as HTTP and HTTPS requests. It runs layer 7 and can route traffic based on URL paths, hostnames, or request headers.
 * Amazon CloudFront: Content delivery network (CDN) for fast distribution of content to users worldwide.
 * AWS App Mesh: Service mesh to monitor and control microservices applications' communication.
 
